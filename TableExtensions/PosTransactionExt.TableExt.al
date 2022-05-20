@@ -6,5 +6,9 @@ tableextension 50001 "POS Transaction Ext." extends "LSC POS Transaction"
         {
             Caption = 'Web Order No.';
         }
+        field(50001; "Web Order Code"; Code[20])
+        {
+            Caption = 'Web Order Code';
+        }
     }
 }

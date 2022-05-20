@@ -233,7 +233,7 @@ table 50000 "eShop-Order"
                 IF "New StatusId" = "New StatusId"::"3-To be Picked" THEN "Send For Picking On" := CURRENTDATETIME;
                 IF "New StatusId" = "New StatusId"::"4-To be Invoiced" THEN "Send For Invoice On" := CURRENTDATETIME;
                 IF "New StatusId" = "New StatusId"::"5-Canceled" THEN "Cancelled On" := CURRENTDATETIME;
-                IF "New StatusId" = "New StatusId"::"6-Invoiced" THEN "Invoiced On" := CURRENTDATETIME;
+                IF "New StatusId" = "New StatusId"::"7-Posted in BG" THEN "Invoiced On" := CURRENTDATETIME;
             end;
         }
         field(80000; "Quantity Picked"; Decimal)
@@ -444,51 +444,6 @@ table 50000 "eShop-Order"
                                                                              "Transaction No."=FIELD("Transaction No.")));
              FieldClass = FlowField;*/
         }
-        field(99500; "DIAS Send Status"; Option)
-        {
-            Caption = 'Send Status';
-            OptionCaption = 'Pending,Finished,Error,Closed';
-            OptionMembers = Pending,Finished,Error,Closed;
-        }
-        field(99501; "DIAS Status Text"; Text[250])
-        {
-            Caption = 'Status Text';
-        }
-        field(99502; "DIAS Processed on"; DateTime)
-        {
-            Caption = 'Processed on';
-        }
-        field(99503; "DIAS No_ of Retries"; Integer)
-        {
-        }
-        field(99504; "DIAS Mail Send"; Boolean)
-        {
-            Caption = 'Mail Send';
-        }
-        field(99505; "DIAS Receive Status"; Enum "Receive Status")
-        {
-            Caption = 'Receive Status';
-        }
-        field(99506; "DIAS Receive Doc No"; Code[20])
-        {
-            Caption = 'Receive Doc No';
-        }
-        field(99509; "DIAS Receipt Date"; Date)
-        {
-            Caption = 'Receipt Date';
-        }
-        field(99510; "Dias ID"; Integer)
-        {
-            Caption = 'Dias ID';
-        }
-        field(99512; "DIAS Received Qty"; Decimal)
-        {
-            Caption = 'Received Qrt';
-        }
-        field(99600; "Dias Final Status"; Enum "Final Status")
-        {
-            Caption = 'Final Status';
-        }
         field(99601; "Voucher on Intermediate DB"; Text[30])
         {
             /*CalcFormula = Lookup(eShopOutletOrders.ShippingVoucherCode WHERE (WebOrderId=FIELD(WebOrderId)));
@@ -560,9 +515,6 @@ table 50000 "eShop-Order"
         key(Key14; "Master Order Code", CreatedOn, BlanketOrderNo)
         {
         }
-        key(Key15; "DIAS Receive Doc No")
-        {
-        }
     }
 
     fieldgroups
@@ -588,11 +540,6 @@ table 50000 "eShop-Order"
     begin
         CalcLineStatus(FALSE);
 
-        IF CheckoutCountryCode = 'CY' THEN BEGIN
-            IF "New StatusId" <> "New StatusId"::"6-Invoiced" THEN VALIDATE("Replication Counter");
-        END ELSE BEGIN
-            VALIDATE("Replication Counter");
-        END;
     end;
 
     var

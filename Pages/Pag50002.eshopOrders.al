@@ -150,6 +150,29 @@ page 50002 "eshop-Orders"
     {
         area(Processing)
         {
+            action("Lines")
+            {
+                ApplicationArea = All;
+                Tooltip = '';
+                Promoted = true;
+                PromotedOnly = true;
+                PromotedCategory = Process;
+                Caption = 'Order Lines';
+                RunObject = page "Eshop-Order Lines";
+                RunPageLink = WebOrderId = field(WebOrderId), "Order Type" = field("Order Type");
+
+            }
+            action("Documents")
+            {
+                ApplicationArea = All;
+                Tooltip = '';
+                Promoted = true;
+                PromotedOnly = true;
+                PromotedCategory = Process;
+                Caption = 'Related Documents';
+                RunObject = page "LSC Transaction Register";
+                RunPageLink = "Web Order Code" = field(BlanketOrderNo);
+            }
             action("Post Order")
             {
                 ApplicationArea = All;

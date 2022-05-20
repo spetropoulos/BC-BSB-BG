@@ -6,6 +6,7 @@ codeunit 50000 "Web Order Post"
         Globals: Codeunit "LSC POS Session";
         POSView: Codeunit "LSC POS View";
         PosTransaction: record "LSC POS Transaction";
+        cPOSTrans: Codeunit "LSC POS Transaction";
         StoreSetup: Record "LSC Store";
         xCust: code[20];
         Customer: Record Customer;
@@ -16,6 +17,7 @@ codeunit 50000 "Web Order Post"
 
         LastReceiptNo := GetLastReceipt(Globals.StoreNo(), Globals.TerminalNo());
         LastReceiptNo := INCSTR(LastReceiptNo);
+        LastReceiptNo := cPOSTrans.GetReceiptNo();
         StoreSetup.Get(Globals.StoreNo());
         PosTransaction."Receipt No." := ZeroPad(Globals.TerminalNo(), 10) + ZeroPad(LastReceiptNo, 9);
         PosTransaction."Store No." := Globals.StoreNo();
@@ -46,6 +48,7 @@ codeunit 50000 "Web Order Post"
             PosTransaction."VAT Bus.Posting Group" := Customer."VAT Bus. Posting Group";
 
         PosTransaction."Web Order No." := EshopOrder.WebOrderId;
+        PosTransaction."Web Order Code" := EshopOrder.BlanketOrderNo;
         //PosTransaction."Post Infocode"       := rWO."Post Infocode";
 
         //PosTransaction."Cloudbiz Loyalty No" := rWO."Loyalty Card No.";        
@@ -58,7 +61,8 @@ codeunit 50000 "Web Order Post"
         PosTransaction."Shipment Reason" := rInfo."Shipment Reason";
         PosTransaction.Location := StoreSetup."Location Code";*/
 
-        PosTransaction.INSERT;
+        if not PosTransaction.INSERT then PosTransaction.modify;
+
         InsertTransactionLines(EshopOrder.WebOrderId, PosTransaction);
 
         WEBCreatePayment1(EshopOrder, POSTransaction);
@@ -74,7 +78,8 @@ codeunit 50000 "Web Order Post"
         gTransNo := PosPostUtility.ProcessTransaction(PosTransaction);
 
         COMMIT;
-
+        //        cPOSTrans.StartNewTransaction();
+        cPOSTrans.InsertTmpTransaction(false);
     end;
 
     local procedure GetLastReceipt(StoreNo: code[20]; TerminalNo: code[20]): code[20]
@@ -257,9 +262,11 @@ codeunit 50000 "Web Order Post"
         POSTransLine."Web Order No." := EshopOrderLine.WebOrderId;
         //POSTransLine."Web Order Line No."   := EshopOrderLine."Line No.";
         ITEM.RESET;
-        IF NOT ITEM.GET(RetailSetup."Shipping Charge Item No.") THEN ERROR('Missing Shipping Charge Item No. from Retail Setup!!!!');
 
-        POSTransLine.Number := RetailSetup."Shipping Charge Item No.";
+        //        IF NOT ITEM.GET(RetailSetup."Shipping Charge Item No.") THEN ERROR('Missing Shipping Charge Item No. from Retail Setup!!!!');
+        IF NOT ITEM.GET(EshopOrderLine.ItemNo) THEN ERROR('Missing Charge Item No. from Retail DB!!!!');
+
+        POSTransLine.Number := EshopOrderLine.ItemNo;
         POSTransLine.VALIDATE(Number);
         POSTransLine."Entry Type" := POSTransLine."Entry Type"::Item;
         POSTransLine."Variant Code" := '';
@@ -374,6 +381,7 @@ codeunit 50000 "Web Order Post"
     var
         CustomerTemplate: Record Customer;
         Customer: Record Customer;
+        xPrefix: code[10];
     begin
         CustomerTemplate.Get('C0001');
         Customer.Init();
@@ -382,12 +390,21 @@ codeunit 50000 "Web Order Post"
         Customer."VAT Bus. Posting Group" := CustomerTemplate."VAT Bus. Posting Group";
         Customer."Customer Posting Group" := CustomerTemplate."Customer Posting Group";
         Customer."Invoice Disc. Code" := CustomerTemplate."Invoice Disc. Code";
+        /*        
+                if EshopOrder."Order Type" = EshopOrder."Order Type"::"BSB NS" then xPrefix := 'WB';
+                if EshopOrder."Order Type" = EshopOrder."Order Type"::"Lynne NS" then xPrefix := 'WL';
+                If EshopOrder.BillingIsInvoice then xPrefix := xPrefix + 'I';
+
+                Customer."No." := xPrefix + format(EshopOrder.CustomerLoginId);
+        */
+        Customer."No." := EshopOrder."Customer No.";
         Customer.Insert(true);
 
         Customer.Address := EshopOrder.BillingAddressLine1;
         Customer."Address 2" := EshopOrder.BillingAddressLine2;
         Customer."Post Code" := EshopOrder.BillingPostalCode;
         Customer."Country/Region Code" := EshopOrder.BillingCountryCode;
+        Customer.City := EshopOrder.ShippingCity;
         Customer."Phone No." := EshopOrder.BillingPhones;
         Customer."Mobile Phone No." := EshopOrder.BillingMobiles;
         Customer."E-Mail" := EshopOrder.BillingEmail;

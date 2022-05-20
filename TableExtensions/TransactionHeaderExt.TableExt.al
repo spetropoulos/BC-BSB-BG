@@ -6,5 +6,16 @@ tableextension 50002 "Transaction Header Ext." extends "LSC Transaction Header"
         {
             Caption = 'Web Order No.';
         }
+        field(50001; "Web Order Code"; Code[20])
+        {
+            Caption = 'Web Order Code';
+        }
+    }
+    keys
+    {
+        key(WEB; "Web Order Code", "Web Order No.")
+        {
+
+        }
     }
 }

@@ -6,5 +6,9 @@ tableextension 50003 "POS Trans. Line Ext." extends "LSC POS Trans. Line"
         {
             Caption = 'Web Order No.';
         }
+        field(50001; "Web Order Code"; Code[20])
+        {
+            Caption = 'Web Order Code';
+        }
     }
 }

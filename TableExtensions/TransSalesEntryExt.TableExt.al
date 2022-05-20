@@ -6,6 +6,10 @@ tableextension 50005 "Trans. Sales Entry Ext." extends "LSC Trans. Sales Entry"
         {
             Caption = 'Web Order No.';
         }
-    }
 
+        field(50001; "Web Order Code"; Code[20])
+        {
+            Caption = 'Web Order Code';
+        }
+    }
 }

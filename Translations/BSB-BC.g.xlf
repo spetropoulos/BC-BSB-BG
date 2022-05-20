@@ -253,66 +253,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DeliveryStore - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 1646847113 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Final Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field Dias Final Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 3935906630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Dias ID</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field Dias ID - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 906843958 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Mail Send</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Mail Send - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 2630135818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>DIAS No_ of Retries</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS No_ of Retries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 1977973992 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Processed on</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Processed on - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 682906929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Receipt Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Receipt Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 777107175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Receive Doc No</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Receive Doc No - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 3647570684 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Receive Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Receive Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 3071748856 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Received Qrt</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Received Qty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 1691102369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Send Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Send Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 1691102369 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Pending,Finished,Error,Closed</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Send Status - Property OptionCaption</note>
-        </trans-unit>
-        <trans-unit id="Table 1399490254 - Field 4081756962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Status Text</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table eShop-Order - Field DIAS Status Text - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 1399490254 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -913,6 +853,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Web Order Post - Method CheckTenderType - NamedType __InvalidTenderType</note>
         </trans-unit>
+        <trans-unit id="Page 2118033689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Eshop-Order Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 1650050144 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Barcode field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control Barcode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 4112877437 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the ItemDescription field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control ItemDescription - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 332802016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the ItemNo field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control ItemNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 2481757446 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Picked Line Amount field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control Picked Line Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 2467979522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Picked Line Amount (FC) field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control Picked Line Amount (FC) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 2950783485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Picked Quantity field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control Picked Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Quantity field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2118033689 - Control 3798681774 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the VariantCode field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Eshop-Order Lines - Control VariantCode - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 455347387 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>eshop-Orders</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1048,6 +1033,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page eshop-Orders - Control WebOrderId - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 455347387 - Action 3324780168 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page eshop-Orders - Action Documents - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 455347387 - Action 3324780168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Related Documents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page eshop-Orders - Action Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 455347387 - Action 3471137671 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page eshop-Orders - Action Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 455347387 - Action 3471137671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page eshop-Orders - Action Lines - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 455347387 - Action 1750937698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source></source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1083,10 +1088,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Ext. Var. Values Ext - Field Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1996334795 - Field 1512209317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3627343910">
+          <source>Web Order Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension POS Trans. Line Ext. - Field Web Order Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1996334795 - Field 994795067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3627343910">
           <source>Web Order No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension POS Trans. Line Ext. - Field Web Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3706683553 - Field 1512209317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3653497896">
+          <source>Web Order Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension POS Transaction Ext. - Field Web Order Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3706683553 - Field 994795067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3653497896">
           <source>Web Order No.</source>
@@ -1103,15 +1118,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Retail Setup Extension - Field Shipping Charge VAT% - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3833449007 - Field 1512209317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 314578698">
+          <source>Web Order Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Trans. Payment Entry Ext. - Field Web Order Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3833449007 - Field 994795067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 314578698">
           <source>Web Order No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Trans. Payment Entry Ext. - Field Web Order No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1761587985 - Field 1512209317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1706155000">
+          <source>Web Order Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Trans. Sales Entry Ext. - Field Web Order Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1761587985 - Field 994795067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1706155000">
           <source>Web Order No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Trans. Sales Entry Ext. - Field Web Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3305202960 - Field 1512209317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1787983729">
+          <source>Web Order Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Transaction Header Ext. - Field Web Order Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3305202960 - Field 994795067 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1787983729">
           <source>Web Order No.</source>
@@ -1313,15 +1343,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Status ID - EnumValue 5-Canceled - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 451784907 - EnumValue 4109448722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>6-Invoiced</source>
+        <trans-unit id="Enum 451784907 - EnumValue 43945432 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>6-Send From GR</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Status ID - EnumValue 6-Invoiced - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Status ID - EnumValue 6-Send From GR - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 451784907 - EnumValue 4129905730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>7-BO Posted</source>
+        <trans-unit id="Enum 451784907 - EnumValue 3791249587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>7-7-Posted in BG</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Status ID - EnumValue 7-BO Posted - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Status ID - EnumValue 7-Posted in BG - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3263465696 - EnumValue 3346365350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Payment</source>

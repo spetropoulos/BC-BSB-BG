@@ -26,12 +26,12 @@ enum 50003 "Status ID"
     {
         Caption = '5-Canceled';
     }
-    value(6; "6-Invoiced")
+    value(6; "6-Send From GR")
     {
-        Caption = '6-Invoiced';
+        Caption = '6-Send From GR';
     }
-    value(7; "7-BO Posted")
+    value(7; "7-Posted in BG")
     {
-        Caption = '7-BO Posted';
+        Caption = '7-7-Posted in BG';
     }
 }

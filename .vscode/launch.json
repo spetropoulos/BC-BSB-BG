@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "BSB-BG-TEST",
+            "name": "BSB-BG-TEST SAKISPC",
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
@@ -17,7 +17,25 @@
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
-            //"schemaUpdateMode": "ForceSync"
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "10.10.15.121 BSB TEST",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost:8080/",
+            "serverInstance": "BC190",
+            "port": 7049,
+            "authentication": "Windows",
+            "startupObjectId": 50002,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "schemaUpdateMode": "ForceSync"
         }
     ]
 }

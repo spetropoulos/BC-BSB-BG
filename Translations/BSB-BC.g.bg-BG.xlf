@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="bg-BG" original="BSB-BC.g.xlf">
+    <body>
+        <group id="body">
+            <trans-unit id="Codeunit 514741837 - Method 4269295917 - NamedType 1676840115" size-unit="char" translate="yes" xml:space="preserve">
+            <source>No Printer defined for Item Label.</source>
+            <target>Не е дефиниран принтер за етикет на артикул.</target>
+            <note from="Developer" annotates="general" priority="2"></note>
+            <note from="Xliff Generator" annotates="general" priority="3">Codeunit Item Label - Method InitPrint - NamedType NoLabelPrinter</note>
+            </trans-unit>
+            <trans-unit id="Codeunit 514741837 - Method 1665861916 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+            <source>There is nothing to print. </source>
+            <target>Няма нищо за принтиране.</target>
+            <note from="Developer" annotates="general" priority="2"></note>
+            <note from="Xliff Generator" annotates="general" priority="3">Codeunit Item Label - Method OnRun - NamedType Text001</note>
+            </trans-unit>
+            
+        </group>
+    </body>
+  </file>
+</xliff>

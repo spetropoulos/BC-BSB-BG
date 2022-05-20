@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "BSB-BG-TEST",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost:8080/",
+            "serverInstance": "BC19-BSB-BG",
+            "port": 19774,
+            "authentication": "Windows",
+            "startupObjectId": 50002,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            //"schemaUpdateMode": "ForceSync"
+        }
+    ]
+}
